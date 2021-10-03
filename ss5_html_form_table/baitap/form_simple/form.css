@@ -1,0 +1,25 @@
+.form{
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 400px;
+    height: 300px;
+    background-color: palegoldenrod;
+}
+h2{
+    text-align: center;
+    color: whitesmoke;
+    background-color: grey;
+}
+input{
+    border-radius: 10px;
+    border-bottom: darkslateblue;
+}
+button{
+    border-bottom: gold;
+    border-radius: 5px;
+    background-color: goldenrod;
+}
+button:hover{
+    font-size: 15px;
+}
+
