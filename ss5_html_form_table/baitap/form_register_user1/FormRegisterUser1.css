@@ -22,6 +22,9 @@ textarea{
 button {
     background-color: grey;
 }
+button:hover{
+    font-size: 15px;
+}
 div{
     font-family: sans-serif;
     color: darkslateblue;
