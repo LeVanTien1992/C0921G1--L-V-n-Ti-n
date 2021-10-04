@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MediumScore</title>
+</head>
+<body>
+<script>
+    let inputdiemLy, inputdiemHoa, inputdiemSinh;
+    inputdiemLy = prompt('Nhập điểm lý');
+    inputdiemHoa = prompt('Nhập điểm hóa');
+    inputdiemSinh = prompt('Nhập điểm sinh');
+
+    let diemLy = parseFloat(inputdiemLy);
+    let diemHoa = parseFloat(inputdiemHoa);
+    let diemSinh = parseFloat(inputdiemSinh);
+
+    let sum = diemLy + diemHoa + diemSinh;
+    let mediumScore= sum/3;
+    document.write('Sum = ' + sum);
+    document.write('<br/>');
+    document.write('MeiumScore = ' + mediumScore);
+
+</script>
+</body>
+</html>
