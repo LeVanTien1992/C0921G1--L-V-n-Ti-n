@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+    <style>
+        form{
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 400px;
+            height: 250px;
+            background-color: darkgrey;
+            text-align: center;
+        }
+        input{
+            border-radius: 5px;
+            border-color: blue;
+            border-bottom: grey;
+            width: 150px;
+            height: 28px;
+        }
+        h1{
+            color: grey;
+        }
+        button{
+            border-radius: 5px;
+            background-color: goldenrod;
+        }
+        button:hover{
+            font-size: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+<form>
+    <h1>Caculator</h1>
+    <input type="text" placeholder="Nhập số thứ nhất" id="n1">
+    <input type="text" placeholder="Nhập số thứ hai" id="n2">
+    <br>
+    <br>
+    <button onclick="tong()"  >Addition(+)</button>
+    <button onclick="hieu()" >Subtraction(-)</button>
+    <button onclick="tich()" >Multiplication(*)</button>
+    <button onclick="thuong()">Division(/)</button>
+
+    <script type="text/javascript">
+        function tong(){
+            let n1 = document.getElementById('n1').value;
+            let n2 = document.getElementById('n2').value;
+            let sum = parseInt(n1) + parseInt(n2);
+            document.write('Result Addition = ' + sum);
+            // alert(n1);
+            // alert(n2);
+        }
+        function hieu() {
+            let n1 = document.getElementById('n1').value;
+            let n2 = document.getElementById('n2').value;
+            let sum = parseInt(n1) - parseInt(n2);
+            document.write('Result Subtraction = ' + sum);
+            // alert(document.getElementById('n1').value);
+        }
+        function tich() {
+            let n1 = document.getElementById('n1').value;
+            let n2 = document.getElementById('n2').value;
+            let sum = parseInt(n1) * parseInt(n2);
+            document.write('Result Multipliacation = ' + sum);
+            // alert(document.getElementById('n1').value);
+        }
+        function thuong() {
+            let n1 = document.getElementById('n1').value;
+            let n2 = document.getElementById('n2').value;
+            let sum = parseInt(n1) / parseInt(n2);
+            document.write('Result Devision = ' + sum);
+            // alert(document.getElementById('n1').value);
+        }
+    </script>
+</form>
+</body>
+</html>
