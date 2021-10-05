@@ -7,8 +7,8 @@
         form{
             border: 1px solid black;
             border-radius: 10px;
-            width: 600px;
-            height: 200px;
+            width: 700px;
+            height: 300px;
             text-align: center;
             background-color: darkgrey;
             font-family: sans-serif;
@@ -19,14 +19,14 @@
         }
         input{
             border-radius: 5px;
-            width: 200px;
+            width: 150px;
             height: 25px;
             border-bottom: blue;
         }
         select{
             border-radius: 5px;
             border-bottom: blue;
-            width: 150px;
+            width: 120px;
             height: 25px;
             color: blue;
         }
@@ -45,30 +45,36 @@
 <form>
     <br>
     <h2>CHUYỂN ĐỔI TIỀN TỆ </h2>
-    <input type="text" id="dauvao">
-    <select  id="select1">
-        <option value="vnd">VietNam</option>
-        <option value="usd">USD</option>
-    </select>
-    <select id="select2">
-        <option value="usd">USD</option>
-        <option value="vnd">VietNam</option>
-    </select>
-    <button onclick="dosomething()">Convert</button>
+    <table>
+        <tr>
+            <th>Amount<input type="text" id="input"></th>
+            <th>From Currency<select  id="select1">
+                <option value="vnd">VietNam</option>
+                <option value="usd">USD</option>
+            </select></th>
+            <th>To Currency<select id="select2">
+                <option value="usd">USD</option>
+                <option value="vnd">VietNam</option>
+            </select></th>
+            <th><button onclick="dosomething()">Convert</button></th>
+        </tr>
+
+    </table>
+
     <script>
         function dosomething(){
-            let giatrivao = document.getElementById('dauvao').value;
+            let entervalue = document.getElementById('input').value;
             let select1 = document.getElementById('select1').value;
             let select2 = document.getElementById('select2').value;
 
-            if(select1 == select2){
-                alert(giatrivao);
+            if(select1 === select2){
+                alert(entervalue);
             }
-            if(select1 == 'vnd' && select2 == 'usd'){
-                alert(giatrivao/23000)
+            if(select1 === 'vnd' && select2 === 'usd'){
+                alert(entervalue/23000);
             }
-            if(select1 == 'usd' && select2 == 'vnd'){
-                alert(giatrivao*23000);
+            if(select1 === 'usd' && select2 === 'vnd'){
+                alert(entervalue*23000);
             }
         }
     </script>
