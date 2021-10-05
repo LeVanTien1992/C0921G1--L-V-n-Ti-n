@@ -49,7 +49,7 @@
         function tong(){
             let n1 = document.getElementById('n1').value;
             let n2 = document.getElementById('n2').value;
-            let sum = parseInt(n1) + parseInt(n2);
+            let sum = parseFloat(n1) + parseFloat(n2);
             document.write('Result Addition = ' + sum);
             // alert(n1);
             // alert(n2);
@@ -57,14 +57,14 @@
         function hieu() {
             let n1 = document.getElementById('n1').value;
             let n2 = document.getElementById('n2').value;
-            let sum = parseInt(n1) - parseInt(n2);
+            let sum = parseFloat(n1) - parseFloat(n2);
             document.write('Result Subtraction = ' + sum);
             // alert(document.getElementById('n1').value);
         }
         function tich() {
             let n1 = document.getElementById('n1').value;
             let n2 = document.getElementById('n2').value;
-            let sum = parseInt(n1) * parseInt(n2);
+            let sum = parseFloat(n1) * parseFloat(n2);
             document.write('Result Multipliacation = ' + sum);
             // alert(document.getElementById('n1').value);
         }
@@ -74,7 +74,7 @@
             if(n2 == 0){
                 alert("Cannot be divided by 0");
             }else
-                sum = parseInt(n1) / parseInt(n2);
+                sum = parseFloat(n1) / parseFloat(n2);
                 document.write('Result Devision = ' + sum);
             // alert(document.getElementById('n1').value);
         }
