@@ -71,8 +71,11 @@
         function thuong() {
             let n1 = document.getElementById('n1').value;
             let n2 = document.getElementById('n2').value;
-            let sum = parseInt(n1) / parseInt(n2);
-            document.write('Result Devision = ' + sum);
+            if(n2 == 0){
+                alert("Cannot be divided by 0");
+            }else
+                sum = parseInt(n1) / parseInt(n2);
+                document.write('Result Devision = ' + sum);
             // alert(document.getElementById('n1').value);
         }
     </script>
