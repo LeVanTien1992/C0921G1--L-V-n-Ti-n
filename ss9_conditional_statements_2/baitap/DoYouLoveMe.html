@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoYouLoveMe</title>
+    <style>
+        #btnNo{
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Do you love me?</h1>
+<input type="button" id="btnYes" value="YES" onclick="yesClick()"/>
+<input type="button" id="btnNo" value="NO" onmouseover="noHover()"/>
+// onclick thì click còn di chuột sẽ là onmouseover
+<script>
+
+    function yesClick() {
+        alert('Chúng ta cùng nhau hẹn hò nhé! <3');
+    }
+    // Hàm yesClick đại diện cho nút Yes
+    // Hàm noHover đại diện cho nút NO
+
+    function noHover() {
+        let x = Math.floor(Math.random() * window.innerWidth);
+        let y = Math.floor(Math.random() * window.innerHeight);
+        document.getElementById('btnNo').style.left = x + 'px';
+        document.getElementById('btnNo').style.top = y + 'px';
+    }
+    /* Math có phương thức là Math.random() giúp ta sinh ra các
+    * sô ngẫu nhiên. Kết hợp với Math.floor để làm tròn số ngẫu nhiên
+    * được sinh ra.*/
+    /* Sử dụng các thuộc tính window.innerHeight và window.innerWidth
+     để lấy chiều cao và chiều rộng của trình duyệt*/
+    /* Sử dụng hàm document.getElementById để lấy về nút NO
+    * Sử dụng thuộc tính style.left và style.top để thay đổi
+    *  vị trí của nút NO*/
+</script>
+</body>
+</html>
