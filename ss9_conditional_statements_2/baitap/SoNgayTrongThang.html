@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TinhSoNgayTrongThang</title>
+</head>
+<body>
+<input type="text" id="input">
+<button onclick="tinhSoNgayTrongThang()">Tính số ngày</button>
+<script>
+    function tinhSoNgayTrongThang() {
+        // let enterValue = document.getElementById('input').value;
+        // document.write(document.getElementById('input').value);
+        // gán giá trị cho month
+        let month = document.getElementById('input').value;
+        // hiện tại month đang là kiểu chuỗi, nên ta chuyển month sang kiểu sô nguyên
+        month = parseInt(month);
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.write('Tháng'+ month+ 'có 31 ngày');
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.write('Tháng' +month+ 'có 30 ngày');
+                break;
+            case 2:
+                let year = parseInt(prompt('Enter the year: '));
+                if (year % 4 === 0) {
+                    document.write('Tháng'+ month + 'Năm' + year + 'có 29 ngày');
+                }else {
+                    document.write('Tháng'+ month + 'Năm' + year + 'có 28 ngày');
+                }
+                break;
+            default:
+                document.write('Bạn nhập tháng không hợp lệ');
+
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
