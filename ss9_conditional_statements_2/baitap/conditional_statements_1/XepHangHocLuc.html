@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XepHang</title>
+</head>
+<body>
+<script>
+    let diemKiemTra = parseFloat(prompt('Nhập điểm kiểm tra: '));
+    let diemGiuaKy = parseFloat(prompt('Nhập điểm giữa kỳ: '));
+    let diemCuoiKy = parseFloat(prompt('Nhập điểm cuối kỳ: '));
+    let diemTrungBinh = (diemKiemTra + diemGiuaKy + diemCuoiKy)/3;
+
+    if (diemTrungBinh >= 9) {
+        document.write('Xếp loại xuất sắc');
+    }else if (diemTrungBinh >=8) {
+        document.write('Xếp loại giỏi');
+    }else if (diemTrungBinh >=7) {
+        document.write('Xếp loại khá')
+    }else if (diemTrungBinh >=6) {
+        document.write('Xếp loại trung bình khá');
+    }else if (diemTrungBinh >=5) {
+        document.write('Xếp loại kém');
+    }else{
+        document.write('Xếp loại yếu');
+    }
+</script>
+</body>
+</html>

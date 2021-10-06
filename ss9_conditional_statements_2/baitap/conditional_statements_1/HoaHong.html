@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HoaHong</title>
+</head>
+<body>
+<script>
+    let tongDanhSo = parseFloat(prompt('Nhập tổng danh số bán hàng: '));
+
+    if ( tongDanhSo <100) {
+        let hoaHong1 = tongDanhSo * 5/100;
+        document.write('Hoa hồng nhận được là' +hoaHong1);
+    }else if (tongDanhSo <300) {
+        let hoaHong2 = tongDanhSo * 10/100;
+        document.write('Hoa hồng nhận được là' +hoaHong2);
+    }else {
+        let hoaHong3 = tongDanhSo * 20/100;
+        document.write('Hoa hồng nhận được là' +hoaHong3);
+    }
+</script>
+</body>
+</html>
