@@ -2,40 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Caculator</title>
-    <link rel="stylesheet" type="text/css" href="Caculator.css">
+    <title>Caculaotor</title>
 </head>
 <body>
-<div class="container">
-    <div class="screen">
-        <span class="overlay"></span>
-        <span class="input"></span>
-    </div>
-    <div class="keyboard">
-        <button class="item item1">AC</button>
-        <button class="item item2">DEL</button>
-        <button class="item item3">+</button>
-        <button class="item item4">7</button>
-        <button class="item item5">8</button>
-        <button class="item item6">9</button>
-        <button class="item item7">-</button>
-        <button class="item item8">4</button>
-        <button class="item item9">5</button>
-        <button class="item item10">6</button>
-        <button class="item item11">*</button>
-        <button class="item item12">1</button>
-        <button class="item item13">2</button>
-        <button class="item item14">3</button>
-        <button class="item item15">/</button>
-        <button class="item item16">0</button>
-        <button class="item item17">.</button>
-        <button class="item item18">=</button>
-        <button class="item item18">00</button>
-    </div>
-</div>
-
+<table>
+    <tr><td colspan="4"><input value="" type="text" id="dauvao"></td></tr>
+    <tr>
+        <td><input type="button" value="1" onclick="nhapGiaTri(this.value)"></td>
+        <td><input type="button" value="2" onclick="nhapGiaTri(this.value)"></td>
+        <td><input type="button" value="3" onclick="nhapGiaTri(this.value)"></td>
+        <td><input type="button" value="+" onclick="nhapGiaTri(this.value)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="nhapGiaTri(this.value)"></td>
+        <td><input type="button" value="5" onclick="nhapGiaTri(this.value)"></td>
+        <td><input type="button" value="6" onclick="nhapGiaTri(this.value)"></td>
+        <td><input type="button" value="-" onclick="nhapGiaTri(this.value)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="nhapGiaTri(this.value)"></td>
+        <td><input type="button" value="8" onclick="nhapGiaTri(this.value)"></td>
+        <td><input type="button" value="9" onclick="nhapGiaTri(this.value)"></td>
+        <td><button value="*" onclick="nhapGiaTri(this.value)">x</button></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="C" onclick="clear1()"></td>
+        <td><input type="button" value="0" onclick="nhapGiaTri(this.value)"></td>
+        <td><input type="button" value="=" onclick="tinhGiaTri()"></td>
+        <td><input type="button" value="/" onclick="nhapGiaTri(this.value)"></td>
+    </tr>
+</table>
 <script>
+    function nhapGiaTri(so){
+        document.getElementById('dauvao').value +=so;
+    }
 
+    function tinhGiaTri() {
+        let bieuThuc= document.getElementById('dauvao').value;
+        document.getElementById('dauvao').value=eval(bieuThuc);
+    }
+    function clear1(){
+        document.getElementById('dauvao').value="";
+    }
 </script>
 </body>
 </html>
