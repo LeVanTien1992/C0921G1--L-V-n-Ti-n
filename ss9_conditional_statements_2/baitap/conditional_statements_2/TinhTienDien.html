@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TinhTienDien</title>
+</head>
+<body>
+<script>
+    /* viet chuong trinh tinh tien dien
+- neu cho kwh su dung 0-50 va gia ban dien tuong ung 1.678 (dong/kwh)
+- neu cho kwh su dung 51-100 va gia ban dien tuong ung 1.734 (dong/kwh)
+- neu cho kwh su dung 101-200 va gia ban dien tuong ung 2.014 (dong/kwh)
+- neu cho kwh su dung 201-300 va gia ban dien tuong ung 2.536 (dong/kwh)
+- neu cho kwh su dung 301-400 va gia ban dien tuong ung 2.834 (dong/kwh)
+- neu cho kwh su dung 401 tro len va gia ban dien tuong ung 2.927 (dong/kwh) */
+    let kwh = prompt("Nhập số điện tiêu thụ hàng tháng: ");
+
+    // switch (kwh) {
+    //     case 0-50:
+    //         document.write("Số tiền phải trả=", kwh*1.678);
+    //         break;
+    //     case 51-100:
+    //         document.write("Số tiền phải trả=", kwh*1.734);
+    //         break;
+    //     case 101-200:
+    //         document.write("Số tiền phải trả=", kwh*2.014);
+    //         break;
+    //     case 201-300:
+    //         document.write("Số tiền phải trả=", kwh*2.536);
+    //         break;
+    //     case 301-400:
+    //         document.write("Số tiền phải trả=", kwh*2.834);
+    //         break;
+    //     case >400:
+    //         document.write("Số tiền phải trả=", kwh*2.927);
+    //         break;
+    //
+    // }
+    if(kwh <=50){
+        document.write("Số tiền phải trả=", kwh*1.678);
+    }else if(kwh <=100){
+        document.write("Số tiền phải trả=", kwh*1.734);
+    }else if(kwh <=200){
+        document.write("Số tiền phải trả=", kwh*2.014);
+    }else if(kwh <=300){
+        document.write("Số tiền phải trả=", kwh*2.536);
+    }else if(kwh <=400){
+        document.write("Số tiền phải trả=", kwh*2.834);
+    }else {
+        document.write("Số tiền phải trả=", kwh*2.927);
+    }
+</script>
+</body>
+</html>

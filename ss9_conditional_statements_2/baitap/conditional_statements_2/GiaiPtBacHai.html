@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PTBacHai</title>
+</head>
+<body>
+<script>
+    // Giải phương trình bậc hai
+    let a = parseFloat(prompt('Nhập vào a: '));
+    let b = parseFloat(prompt('Nhập vào b: '));
+    let c = parseFloat(prompt('Nhập vào c: '));
+    let x, x1, x2, delta;
+
+    if (a === 0) {
+        if (b === 0) {
+            if (c ===0) {
+                document.write('Pt có vô số nghiệm');
+            }else {
+                document.write('Pt vô nghiệm');
+            }
+        }else {
+            document.write('Pt có nghiệm =',  x= -c/b);
+        }
+    }else {
+        delta = b*b - 4*a*c;
+        if (delta === 0) {
+            document.write('Pt có nghiệm kép: ', x1, x2 = -b/2*a);
+        }else if(delta > 0) {
+            document.write('Pt có 2 nghiệm phân biệt: ', x1 = (-b + Math.sqrt(delta))/(2*a), x2 = (-b - Math.sqrt(delta))/(2*a));
+        }else {
+            document.write('Pt vô nghiệm');
+        }
+    }
+</script>
+</body>
+</html>

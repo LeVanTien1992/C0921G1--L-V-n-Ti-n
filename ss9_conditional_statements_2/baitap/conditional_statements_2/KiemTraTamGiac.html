@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KiemTraTamGiac</title>
+</head>
+<body>
+<script>
+    /*
+    *  Điều kiện để a,b,c là cạnh của một tam giác là:
+
+        a,b,c > 0
+        a + b > c
+        b + c > a
+        a + c > b*/
+    let a = parseFloat(prompt("Nhập vào cạnh a(a>0): "));
+    let b = parseFloat(prompt("Nhập vào cạnh b(b>0): "));
+    let c = parseFloat(prompt("Nhập vào cạnh c(c>0): "));
+
+
+    if(a + b > c && a + c > b && b + c > a){
+        alert("a,b,c là cạnh của một tam giác");
+    }else {
+        alert("a,b,c không phải là cạnh của một tam giác");
+    }
+
+</script>
+</body>
+</html>
