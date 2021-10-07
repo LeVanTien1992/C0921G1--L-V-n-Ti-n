@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThueThuNhaoCaNhan</title>
+</head>
+<body>
+<script>
+    let thuNhap = parseFloat(prompt('Thu nhập cá nhân: '));
+    // switch (thuNhap) {
+    //     case 0:
+    //         let tinhThue = thuNhap * 0.01;
+    //         document.write('Thuế thu nhập cá nhân=', tinhThue);
+    //         break;
+    //     case 1:
+    //         tinhThue = thuNhap * 0.05;
+    //         document.write('Thuê thu nhập cá nhân 5tr đến 10tr=', tinhThue);
+    //         break;
+    //     case 2:
+    //         tinhThue = thuNhap * 0.1;
+    //         document.write('Thuế thu nhập cá nhân 10tr đến 50tr= ', tinhThue);
+    //         break;
+    //     case 3:
+    //         tinhThue = thuNhap *
+    // }
+    let soThue = parseInt();
+
+    if (thuNhap > 50) {
+        soThue = thuNhap * 30/100;
+        document.write('Thuế thu nhập cá chân của bạn', soThue);
+    }else if (thuNhap > 20) {
+        soThue = thuNhap * 20/100;
+        document.write('Thuế thu nhập cá nhân của bạn ', soThue);
+    }else if ( thuNhap > 10) {
+        soThue = thuNhap * 10/100;
+        document.write('Thuế thu nhập cá nhân của bạn ', soThue);
+    }else{
+        document.write('Bạn không đủ điều kiện để đóng thuế');
+    }
+
+</script>
+</body>
+</html>
