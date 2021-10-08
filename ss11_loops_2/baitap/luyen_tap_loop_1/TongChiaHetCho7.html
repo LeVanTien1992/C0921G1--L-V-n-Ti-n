@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChiaHetCho7</title>
+</head>
+<body>
+<script>
+    let i = 0;
+    let sum = 0;
+    let count = 0;
+    let daySo = "";
+    while (count <= 29){
+        if (i % 7 === 0){
+            daySo += i+ "-";
+            sum = sum + i;
+             count++;
+        }
+        i++;
+
+
+    }
+    document.write(daySo + "<br>");
+    document.write('Tổng 30 số đầu tiên chia hết cho 7=', + sum);
+    // let count =0, tong= 0;
+    // let daySo= "";
+    // for (let i= 0; ; i++){
+    //     if(i % 7 === 0){
+    //         daySo += i+ "-";
+    //         console.log(daySo);
+    //         tong += i;
+    //         count++;
+    //         if(count===30){
+    //             break;
+    //         }
+    //     }
+    // }
+    // document.write(daySo+ "<br>");
+    // document.write("Tổng 30 số đầu tiên chia hết cho 7= "+tong);
+</script>
+</body>
+</html>
