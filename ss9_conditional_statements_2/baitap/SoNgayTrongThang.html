@@ -5,43 +5,97 @@
     <title>TinhSoNgayTrongThang</title>
 </head>
 <body>
-<input type="text" id="input">
-<button onclick="tinhSoNgayTrongThang()">Tính số ngày</button>
+<!--<input type="text" id="input">-->
+<!--<button onclick="tinhSoNgayTrongThang()">Tính số ngày</button>-->
+<input type="text" id="songay1"><input type="button" value="tính số ngày" onclick="tinhsongay()"><br>
+<p id="hienthi1"></p>
+<input type="text" id="songay2"><input type="button" value="tính số ngày" onclick="tinhsongay()"><br>
+<p id="hienthi2"></p>
 <script>
-    function tinhSoNgayTrongThang() {
-        // let enterValue = document.getElementById('input').value;
-        // document.write(document.getElementById('input').value);
-        // gán giá trị cho month
-        let month = document.getElementById('input').value;
-        // hiện tại month đang là kiểu chuỗi, nên ta chuyển month sang kiểu sô nguyên
-        month = parseInt(month);
-        switch (month) {
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-                document.write('Tháng'+ month+ 'có 31 ngày');
-                break;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                document.write('Tháng' +month+ 'có 30 ngày');
-                break;
-            case 2:
-                let year = parseInt(prompt('Enter the year: '));
-                if (year % 4 === 0) {
-                    document.write('Tháng'+ month + 'Năm' + year + 'có 29 ngày');
-                }else {
-                    document.write('Tháng'+ month + 'Năm' + year + 'có 28 ngày');
-                }
-                break;
-            default:
-                document.write('Bạn nhập tháng không hợp lệ');
+    // function tinhSoNgayTrongThang() {
+    //     // let enterValue = document.getElementById('input').value;
+    //     // document.write(document.getElementById('input').value);
+    //     // gán giá trị cho month
+    //     let month = document.getElementById('input').value;
+    //     // hiện tại month đang là kiểu chuỗi, nên ta chuyển month sang kiểu sô nguyên
+    //     month = parseInt(month);
+    //     switch (month) {
+    //         case 1:
+    //         case 3:
+    //         case 5:
+    //         case 7:
+    //         case 8:
+    //         case 10:
+    //         case 12:
+    //             document.write('Tháng'+ month+ 'có 31 ngày');
+    //             break;
+    //         case 4:
+    //         case 6:
+    //         case 9:
+    //         case 11:
+    //             document.write('Tháng' +month+ 'có 30 ngày');
+    //             break;
+    //         case 2:
+    //             let year = parseInt(prompt('Enter the year: '));
+    //             if (year % 4 === 0) {
+    //                 document.write('Tháng'+ month + 'Năm' + year + 'có 29 ngày');
+    //             }else {
+    //                 document.write('Tháng'+ month + 'Năm' + year + 'có 28 ngày');
+    //             }
+    //             break;
+    //         default:
+    //             document.write('Bạn nhập tháng không hợp lệ');
+    //
+    //     }
+    // }
 
+
+    function tinhsongay() {
+        let songay1 = document.getElementById("songay1").value
+        console.log(songay1)
+        let songay2 = document.getElementById("songay2").value
+
+        switch (songay1.toString() || songay2.toString() ) {
+            case "1":
+            case "3":
+            case "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12":
+                if(songay1){
+                    document.getElementById("hienthi1").innerHTML = "tháng "+songay1+" có 31 ngày"
+                }
+                if(songay2){
+                    document.getElementById("hienthi2").innerHTML = "tháng "+songay2+" có 31 ngày"
+                }
+                break
+            case "2":
+                if(songay1) {
+                    document.getElementById("hienthi1").innerHTML = "tháng " + songay1 + " có 28 hoặc 29 ngày"
+                }
+                if(songay2){
+                    document.getElementById("hienthi2").innerHTML = "tháng " + songay2 + " có 28 hoặc 29 ngày"
+                }
+                break
+            case "4":
+            case "6":
+            case "9":
+            case "11":
+                if(songay1) {
+                    document.getElementById("hienthi1").innerHTML = "tháng " + songay1 + " có 30 ngày"
+                }
+                if(songay2){
+                    document.getElementById("hienthi2").innerHTML = "tháng " + songay2 + " có 30 ngày"
+                }
+                break
+            default:
+                if(songay1) {
+                    document.getElementById("hienthi1").innerHTML = "Bạn chưa nhập tháng hoặc không đúng"
+                }
+                if(songay2){
+                    document.getElementById("hienthi2").innerHTML = "Bạn chưa nhập tháng hoặc không đúng"
+                }
         }
     }
 
