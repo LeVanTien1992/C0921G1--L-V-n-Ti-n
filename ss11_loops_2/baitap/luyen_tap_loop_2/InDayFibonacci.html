@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script>
+    let so = Number(prompt("Nhập vào số muốn in ra dãy Fibonacci: "));
+    let f0= 0;
+    let f1 = 1;
+    let f;
+    for (let i= 0; i< so; i++){
+        if(i <= 1){
+            f = i;
+        }else {
+            f = f0 + f1;
+            f0 = f1;
+            f1 = f;
+        }
+        document.write(+f+ "<br>");
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LaiSuatNganHang</title>
+</head>
+<body>
+<script>
+    let soTien= Number(prompt("Nhập số tiền gửi ngân hàng lãi suất 5%/năm: "));
+    let soThang = Number(prompt("Nhập số tháng gửi: "));
+    let tienLaiThang = 0;
+    let tongTienLai = tienLaiThang;
+    document.write("Số tiền bạn gửi là" +soTien+ "VND trong" +soThang+ "tháng với lãi suất 5%/năm"+"<br>");
+    for (let i= 0; i<soThang; i++){
+        tienLaiThang= ((soTien*5)/100)/12;
+        tongTienLai += tienLaiThang;
+        soTien +=tienLaiThang;
+        document.write("Tiền lãi tháng" +(i+1)+ "là" +tienLaiThang.toFixed()+ "VND"+ "<br>");
+
+    }
+    document.write("<br>");
+    document.write("Tổng tiền lãi của bạn trong" +soThang+ " tháng là=" +tongTienLai.toFixed()+ "VND");
+
+</script>
+</body>
+</html>
