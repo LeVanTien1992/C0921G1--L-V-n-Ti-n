@@ -5,47 +5,48 @@
     <title>NobitaMove</title>
 </head>
 <body onload="docReady()">
-<img id="nobita" src="nobita.jpg" style="position: absolute; left: 0; top: 0 "width="100px" height="80px">
+<img src="nobita.jpg" id="nobita" style="position: absolute; left: 0; top: 0;" height="200" width="180" />
 <script>
-    function upArrowPressed() {
-        let element = document.getElementById('nobita');
-        element.style.top = parseInt(element.style.top) -5 + 'px';
+    //hàm xử lý phím nhấn
+    function xu_ly_phim_nhan_len() {
+        let element = document.getElementById("nobita")
+        element.style.top = parseInt(element.style.top)  - 5 + "px"
     }
-    function downArrowPressed() {
-        let element = document.getElementById('nobita');
-        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    //ham xu lý phím nhấn
+    function xu_ly_phim_nhan_xuong() {
+        let element = document.getElementById("nobita")
+        element.style.top = parseInt(element.style.top)  + 5 + "px"
     }
-    function leftArrowPressed() {
-        let element = document.getElementById('nobita');
-        element.style.left = parseInt(element.style.top) - 5 + 'px';
+    function xu_ly_phim_nhan_sang_trai() {
+        let element = document.getElementById("nobita")
+        element.style.left = parseInt(element.style.left)  - 5 + "px"
     }
-    function rightArrowPressed() {
-        let element = document.getElementByIb('nobita');
-        element.style.left = parseInt(element.style.top) + 5 + 'px';
+    function xu_ly_phim_nhan_sang_phai() {
+        let element = document.getElementById("nobita")
+        element.style.left = parseInt(element.style.left)  + 5 + "px"
     }
 
     function moveSelection(evt) {
-        switch(evt.keyCode) {
+
+        switch (evt.keyCode) {
             case 37:
-                leftArrowPressed();
-                break;
+                xu_ly_phim_nhan_sang_trai()
+                break
             case 39:
-                rightArrowPressed();
-                break;
+                xu_ly_phim_nhan_sang_phai()
+                break
             case 38:
-                upArrowPressed();
-                break;
+                xu_ly_phim_nhan_len()
+                break
             case 40:
-                downArrowPressed();
-                break;
+                xu_ly_phim_nhan_xuong()
+                break
         }
     }
 
     function docReady() {
-        window.addEventListener('keydown', moveSelection);
-
+        window.addEventListener('keydown', moveSelection)
     }
-
 
 </script>
 </body>
