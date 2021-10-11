@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HinhChuNhatRong</title>
+</head>
+<body>
+<script>
+    // let n= 20;
+    // for (let i= 0; i< n; i++){
+    //     for (let j= 0; j< n; j++){
+    //
+    //         if(i== 0 || i==n-1 || j==i || j+i==n-1){// nếu i==j ra hình chéo
+    //             document.write("*");
+    //         }else {
+    //             document.write("&nbsp&nbsp")//khoảng trắng
+    //         }
+    //     }
+    //     document.write("<br/>");
+    //
+    // }
+    let n= 5;
+    let m= 20
+    for (let i= 0; i< n; i++){
+        for (let j= 0; j< m; j++){
+
+            if(i== 0 || i==n-1 || j==0 || j==m-1){//  ra hình vuông
+                document.write("*");
+            }else {
+                document.write("&nbsp&nbsp")//khoảng trắng
+            }
+        }
+        document.write("<br/>");
+
+    }
+    // let n= 11;
+    // let m= 21;
+    // for (let i= 0; i< n; i++){
+    //     for (let j= 0; j< m; j++){
+    //
+    //         if( i==parseInt(n/2) || j==parseInt(m/2)){// dấu thập
+    //             document.write("*");
+    //         }else {
+    //             document.write("&nbsp&nbsp")//khoảng trắng
+    //         }
+    //     }
+    //     document.write("<br/>");
+    //
+    // }
+</script>
+</body>
+</html>
