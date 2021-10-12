@@ -7,7 +7,7 @@
 <body>
 <script>
     let mangSo = [];
-    let max = 0, viTri = 0, tongTb= 0;
+    let max = 0, viTri = 0, tong= 0, giaTriTrungBinh= 0;
     for (let i= 0; i< 10; i++){
         mangSo[i] = Number(prompt("Nhập sô vào mảng: "));
     }
@@ -18,12 +18,12 @@
             max = mangSo[i];
             viTri = i;
         }
-        tongTb = tongTb + mangSo[i];
+        tong = tong + mangSo[i];
     }
-    tongTb = tongTb/mangSo.length;
+    giaTriTrungBinh = tong/mangSo.length;
 
     document.write("Phần tử lớn nhất trong mảng là " + max + "tại vị trí thứ [" +viTri+ "]<br>");
-    document.write("Giá trị trung bình của các phần tử trong mảng là " +tongTb+ "<br>");
+    document.write("Giá trị trung bình của các phần tử trong mảng là " +giaTriTrungBinh+ "<br>");
 </script>
 </body>
 </html>
