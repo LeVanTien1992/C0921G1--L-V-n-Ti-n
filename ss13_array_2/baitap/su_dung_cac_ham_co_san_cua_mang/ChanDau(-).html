@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChanDau(-)GiuaHaiSoChan</title>
+</head>
+<body>
+<script>
+    let daySo = prompt("Nhập vào dãy số: ");
+    let mang = [daySo[0]];
+    document.write("Dãy số gồm: " +daySo+ "<br>")
+    for (let i= 1; i< daySo.length; i++){
+        if (daySo[i-1] % 2 === 0 && daySo[i] % 2 === 0){
+            mang.push("-", daySo[i]);
+        }else {
+            mang.push(daySo[i]);
+        }
+    }
+    document.write(mang.join(""));
+</script>
+</body>
+</html>
