@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UngDungVuiFakingTextareaOnTyping</title>
+</head>
+<body>
+
+<form action="" name="f">
+    <h1>Type anything slowly</h1>
+    <textarea name="textare" id="textare" cols="30" rows="10" onkeydown="setTextArea()"></textarea>
+</form>
+<script>
+
+    let chuoi = "HOW ARE YOU DOING?"
+    let cuphap =""
+    function setTextArea() {
+        let area  = document.f.textare.value;
+        let doDai = area.length
+
+        if(doDai >0){
+            for (let i=1; i<= doDai; i++){
+                cuphap += chuoi[i-1]
+                console.log(chuoi[i-1])
+                if(i == 19){
+                    cuphap = ""
+                    document.f.textare.value = ""
+                }
+            }
+            document.f.textare.value = cuphap
+            cuphap = ""
+            let stime = setTimeout("setTextArea()", 1)
+
+        }
+    }
+</script>
+</body>
+</html>
