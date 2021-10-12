@@ -18,31 +18,31 @@
                 number =0
             } else if( i == 2 || i == 3){
                 count++
-                so_nguyen_to+= i+" "
+                so_nguyen_to+= i+" ";
             }else if(i%2==0){
-                number = 0
+                number = 0;
             }else if(i>=4){
                 for (let j=3;j<(i-1);j++){
                      if(i%j == 0){
-                         number = 0
+                         number = 0;
                          break
                      }else{
-                         number++
+                         number++;
                      }
                 }
 
                 if(number>0){
-                    so_nguyen_to += i+ " "
-                    count ++
+                    so_nguyen_to += i+ " ";
+                    count ++;
                     if(count == 20){
-                        break
+                        break;
                     }
                 }
 
             }
         }
 
-        document.write("20 Số nguyên tố gồm: "+so_nguyen_to)
+        document.write("20 Số nguyên tố gồm: "+so_nguyen_to);
     }
 
     // function tinhSoNguyenTo(soluong) {
@@ -81,7 +81,7 @@
     //     return so_nguyen_to
     // }
     //
-    // function soLuongSoNguyenTo() {
+    // function nguyento() {
     //     let so_luong = Number(prompt("Nhập số lượng số nguyên tố cần tìm "))
     //     let so_nguyen_to = tinhSoNguyenTo(so_luong)
     //     document.write("Hiển thị "+so_luong+" số nguyên tố đầu tiên gồm soNguyenTo["+so_nguyen_to+"]")

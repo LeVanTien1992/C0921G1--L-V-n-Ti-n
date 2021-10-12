@@ -6,27 +6,27 @@
 </head>
 <body>
 <script>
-    let F= 0, F0= 0,F1= 0;
-    let chia5= "";
-    let fibonacci= "";
+    let f0= 0;
+    let f1 = 1;
+    let f;
+    let chia5;
+    // document.write("20 số đầu tiền trong dãy Fibonacci là:","<br>");
     for (let i= 0; i< 20; i++){
-        if(i===0){
-            F= 1;
-            F1= 1;
-            fibonacci += F+ "";
-        }else{
-            F= F0+F1
-            F0 = F1
-            F1 = F
-            fibonacci += F+ " "
-            console.log(i +" = "+F);
-            if(F%5===0){
-                chia5 = F;
+        if(i <= 1){
+            f = i;
+        }else {
+            f = f0 + f1;
+            f0 = f1;
+            f1 = f;
+            if(i % 5 === 0){
+                chia5= f;
                 break;
             }
         }
+
+
     }
-    document.write("Số chia hết cho 5 trong dãy Fibonacci là" +chia5);
+    document.write("Số chia hết cho 5 trong dãy Fibonacci là =" +chia5);
 
 </script>
 </body>

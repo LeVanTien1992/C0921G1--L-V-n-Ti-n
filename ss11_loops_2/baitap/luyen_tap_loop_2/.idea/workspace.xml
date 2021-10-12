@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f936fc7a-3eb3-4b41-ba85-6bfd2751d035" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ss12_array_1/thuchanh/CaroGameSimple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Caculator.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Caculator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Caculator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../NobitaMove.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SoNgayTrongThang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/.idea/thuchanh.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/DisplayHr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/DoWhileLoops.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/ForLoops.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/LoopsForLongNhau.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/Sum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/WhileLongNhau.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_for-loops_1/thuchanh/WhileLoops.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CountLoops.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HienThi20SoDauTienFibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BangCuuChuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BangCuuChuong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SoNguyenTo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SoNguyenTo2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SoNguyenTo2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luyen_tap_loop_1/20SoTrongFibonacciDauTien.html" beforeDir="false" afterPath="$PROJECT_DIR$/../luyen_tap_loop_1/20SoTrongFibonacciDauTien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luyen_tap_loop_1/SoDauTienTrongFibanacciChiaHetCho5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../luyen_tap_loop_1/SoDauTienTrongFibanacciChiaHetCho5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luyen_tap_loop_1/Tong20SoDauTienTrongFibonacci.html" beforeDir="false" afterPath="$PROJECT_DIR$/../luyen_tap_loop_1/Tong20SoDauTienTrongFibonacci.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luyen_tap_loop_1/TongChiaHetCho7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../luyen_tap_loop_1/TongChiaHetCho7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/.idea/thuchanh.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/Add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/CheckLeapYear.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/Employee.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/IfElse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/IfElseIf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/Sign.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/SwitchCase1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/SwitchCase2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_conditional_statements/thuchanh/demo2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_conditional_statements_2/Caculator2.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1zLtb00sdEut7UyvtdLxVAkopNf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../luyen_tap_loop_1" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f936fc7a-3eb3-4b41-ba85-6bfd2751d035" name="Default Changelist" comment="" />
+      <created>1633939263210</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633939263210</updated>
+      <workItem from="1633939265446" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="133" y="118" key="FileChooserDialogImpl" timestamp="1633939284520">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="133" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1633939284520" />
+  </component>
+</project>
