@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    let mangSo = [];
+    let max = 0, viTri = 0;
+    for (let i= 0; i< 10; i++){
+        mangSo[i] = Number(prompt("Nhập số vào mảng: "));
+    }
+    document.write("Mảng số = ["+mangSo+"] <br>");
+
+    for (let i= 0; i< mangSo.length; i++){
+        if(max < mangSo[i]){
+            max = mangSo[i];
+            viTri = i;
+        }
+    }
+    document.write("Phần từ lớn nhất trong mảng là " +max+ " tại vị trí thứ " + viTri+ "<br>");
+</script>
+</body>
+</html>

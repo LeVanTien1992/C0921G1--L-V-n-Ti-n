@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+<script>
+    let mangSo = [], flag = true, viTri= [], dem = 0;
+    let mangNew = [];
+    for (let i= 0; i< 10; i++){
+        mangSo[i] = prompt("Nhập số vào mảng: ");
+        if (mangSo[i] === 'V'){
+            flag = false;
+        }else {
+            mangNew.push(mangSo[i]);
+        }
+    }
+    document.write("Mảng = ["+mangSo+"] <br>");
+    if (flag === false){
+        document.write("Đã xóa phần tử V. Mảng = ["+mangNew+"] <br>");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8</title>
+</head>
+<body>
+<script>
+    let mangSo = [], temp= 0;
+    for (let i= 0; i< 10; i++){
+        mangSo[i] = prompt("Nhập số vào mảng: ");
+    }
+    document.write("Mảng = ["+mangSo+"] <br>");
+
+    for (let i= 0; i< mangSo.length- 1; i++){
+        for (let j= i+1; j< mangSo.length; j++){
+            if (mangSo[i] < mangSo[j]){
+                temp = mangSo[i];
+                mangSo[i] = mangSo[j];
+                mangSo[j] = temp;
+            }
+        }
+    }
+    document.write("Sắp xếp từ lớn tới bé Mảng = ["+mangSo+"] <br>");
+
+
+
+</script>
+</body>
+</html>
