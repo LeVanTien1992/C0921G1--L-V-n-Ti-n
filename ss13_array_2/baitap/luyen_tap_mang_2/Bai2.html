@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    let mang = [1, 2, 4, "a", "d", 5, 4, 7, 9, "s", "x", 0, 6];
+    let temp;
+    document.write("Mảng = ["+mang+"] <br>");
+    for (let i= 0; i< Math.floor((mang.length)/2); i++){
+        for (let j= Math.floor((mang.length)/2); j<mang.length; j++){
+            temp = mang[i];
+            mang[i] = mang[j];
+            mang[j] = temp;
+        }
+    }
+    document.write("Mảng đổi chiều = ["+mang+"]");
+</script>
+</body>
+</html>

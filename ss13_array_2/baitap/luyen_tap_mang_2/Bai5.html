@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<script>
+    let chuoi1= prompt("Nhập chuỗi 1: ");
+    let chuoi2= prompt("Nhập chuỗi 2: ");
+    let soSanh= true;
+    document.write("Chuỗi 1= ["+chuoi1+"] <br>" + "Chuỗi 2 = ["+chuoi2+"] <br>");
+    if (chuoi1.length !== chuoi2.length){
+        document.write("2 chuỗi không giống nhau")
+    }else {
+        for (let i= 0; i< chuoi1.length; i++){
+            for (let j= 0; i< chuoi2.length; j++){
+                if (chuoi1[i] === chuoi2[j]){
+                    soSanh = true;
+                }else {
+                    soSanh = false;
+                }
+            }
+        }
+        if (soSanh == false){
+            document.write("2 chuỗi không giống nhau");
+        }else {
+            document.write("2 chuỗi giống nhau");
+        }
+    }
+</script>
+</body>
+</html>
