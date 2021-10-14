@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    function tinhDienTichHinhTron(r) {
+        let s =  Math.PI* (r * r);
+        return s;
+    }
+    function tinhChuViHinhTron(r) {
+        let c = 2 * r * Math.PI;
+        return c;
+    }
+
+    let r = parseFloat(prompt("Nhập vào bán kính hình tron: "));
+    let dienTinh = tinhDienTichHinhTron(r);
+    let chuVi = tinhChuViHinhTron(r);
+    document.write("Diện tích hình tròn =" +dienTinh+ "<br/>");
+    document.write("Chu vi hình tròn =" +chuVi+ "<br/>");
+</script>
+</body>
+</html>

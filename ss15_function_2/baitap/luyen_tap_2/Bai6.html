@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+<script>
+    function kiemTraSoNguyenDuong(so) {
+        if (so > 0){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    let so = Number(prompt("Nhập vào số: "));
+    let kiemTra = kiemTraSoNguyenDuong(so);
+    if (kiemTra){
+        alert( so+" là số nguyên dương.");
+    }else {
+        alert( so+" Không phải số nguyên dương");
+    }
+</script>
+</body>
+</html>

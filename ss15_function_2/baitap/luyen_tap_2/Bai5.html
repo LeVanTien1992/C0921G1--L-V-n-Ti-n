@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<script>
+    function numbers(mang_so) {
+        let giaTriNhoNhat;
+        for (let i= 0; i< mang_so.length; i++){
+            giaTriNhoNhat = mang_so[0];
+            if (mang_so[i]< giaTriNhoNhat){
+                giaTriNhoNhat = mang_so[i];
+            }
+        }
+        return giaTriNhoNhat;
+    }
+
+    let mang_so = [];
+    for (let i= 0; i<3; i++){
+        mang_so.push(Number(prompt("Nhập vào số thứ " +i)));
+    }
+    let min = numbers(mang_so);
+    document.write("Mảng số gồm ["+mang_so+"] <br/>");
+    document.write("Giá trị nhỏ nhất là " + min);
+</script>
+</body>
+</html>
