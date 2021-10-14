@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChangeFeetToMeter</title>
+</head>
+<body>
+<input type="text" id="nhapso"/>
+<select id="luachon">
+    <option value="feet">Feet</option>
+    <option value="meter">Meter</option>
+</select>
+<input type="button" value="Kiểm tra" onclick="chuyenDoi()"/>
+<p id="ketqua"></p>
+</body>
+<script>
+
+    function chuyenDoi() {
+        let luaChon = document.getElementById("luachon");
+        let giaTri = document.getElementById("nhapso");
+        let ketQua = 0;
+        if (luaChon.value === "feet") {
+            ketQua = feetToMeter(giaTri.value);
+            document.getElementById("ketqua").innerHTML = "Kết quả = "+ketQua+" meters";
+        }else {
+            ketQua = meterToFeet(giaTri.value);
+            document.getElementById("ketqua"). innerHTML = "Kết quả = "+ketQua+" feets";
+        }
+
+    }
+
+    function feetToMeter(feet) {
+        let meter = 0.305 * feet;
+        return meter;
+    }
+
+    function meterToFeet(meter) {
+        let feet = 3.279 * meter;
+        return feet;
+    }
+</script>
+</html>
