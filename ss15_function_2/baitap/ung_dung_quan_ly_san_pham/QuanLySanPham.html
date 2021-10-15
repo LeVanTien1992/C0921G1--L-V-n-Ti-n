@@ -7,7 +7,8 @@
 <body>
 <p>Add New Product</p>
 <input type="text" id="add" placeholder="New Product"/>
-<input type="button" value="Add" onclick="addNewProduct()"/>
+<input type="button" value="Add" onclick="addNewProduct()"/><br/>
+<span>Số lượng sản phẩm: </span><span id="soluong"></span>
 <p id="result"></p>
 
 
@@ -48,20 +49,21 @@
         }
         tableString += '</table>';
         document.getElementById("result").innerHTML= tableString;//định dạng table theo dạng HTML
+        document.getElementById("soluong").innerHTML = listProduct.length;// tạo mục hiển thị số lượng sản phẩm
     }
 
     function addNewProduct() {
         let productName = document.getElementById("add").value;
         document.getElementById("add").value = "";
-        if (productName != ""){
+        if (productName != ""){// xét điện product khác rỗng
             listProduct.push(productName);
         }
-        display();
+        display();// sau khi thực hiên xong hàm thì nhớ gọi lại hàm display này nhé
     }
 
-    function deleteProduct(index) {
+    function deleteProduct(index) {// dùng hàm confirm để xác nhận người dùng có muốn xóa sản phẩm hay không
         let conf = confirm("Bạn có muốn xóa sản phẩm này không? " +listProduct[index]);
-        if (conf){
+        if (conf){// xét điều kiện nhắc người có muốn xóa hay không
             listProduct.splice(index, 1)
         }
         display();
@@ -69,7 +71,7 @@
 
     function editProduct(index) {
         let newName = prompt("Nhập vào tên sản phẩm mới");
-        if (newName != "" && newName != null){
+        if (newName != "" && newName != null){// xét điều kiện nếu như ta không nhập gì hết sẽ hiển thị null và rỗng
             listProduct[index] = newName;
         }
         display();
