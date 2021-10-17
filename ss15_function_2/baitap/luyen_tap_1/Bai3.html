@@ -7,15 +7,15 @@
 <body>
 <!--<input type="button" value="Click me" onclick="nhapSo()"/>-->
 <script>
-    function tinhTong(a,b){
-        if (a > b){
+    function tinhTong(a,b){ // b1: tạo hàm có 2 thám số a và b
+        if (a > b){ // b2: nếu a> b in ra hộp thoại thông báo và ngược lại in ra tổng
             return "Giá trị a > b. Xin nhập lại!"
         }else if (a <= b){
             return a + b;
         }
     }
 
-    // function nhapSo(){
+    // nhập a và b và in ra kêt quả tính tổng
         let a = Number(prompt("Nhập vào a: "));
         let b = Number(prompt("Nhập vào b: "));
         document.write("Tổng của 2 số "+a+" + "+b+" = " +tinhTong(a,b));
