@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>KiemTraSoNguyenTo</title>
 </head>
 <body>
-$END$
+<input type="text" id="nhapso"/>
+<input type="button" value="Kiểm Tra" onclick="soNguyenTo()"/>
+<script>
+    function isPrime(number){
+        if (number <= 1){
+            return false;
+        }else if (number == 2 || number == 3){ /// neu dung 3 dau bang thi dung dang chuoi
+            return true;
+        }else if (number % 2 == 0){
+            return false;
+        }else {
+            for (let i= 3; i< number; i+= 2){
+                if (number % i == 0){
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    function soNguyenTo() {
+        let so = document.getElementById("nhapso");
+        let kiemTra = isPrime(so.value);
+        if (kiemTra) {
+            alert(so.value+ " là số một nguyên tố");
+        }else {
+            alert(so.value+ " không phải là số nguyên tố");
+        }
+    }
+</script>
 </body>
 </html>
