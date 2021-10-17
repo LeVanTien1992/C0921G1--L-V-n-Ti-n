@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>XayDungLopHinhTron</title>
 </head>
 <body>
-$END$
+<script>
+    let Circle = function (radius) {
+        this.radius = radius;
+        this.getRadius = function () {
+            return radius;
+
+        }
+        this.gerArea = function () {
+            return Math.PI * radius * radius;
+
+        }
+    };
+    let circle = new Circle(2);
+    let radius = circle.getRadius();
+    let area = circle.gerArea();
+    alert("Radius: " + radius + "; Area: " +area);
+</script>
 </body>
 </html>
