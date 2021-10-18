@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoTaLopTemperature</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(C){
+            this.doC = C;
+        }
+        getDoC(){
+            return this.doC;
+        }
+        getchangeCtoF(){
+            return ((this.doC* 1.8) + 32);
+        }
+        getchangeCtoKenvin(){
+            return ((this.doC + 273.15));
+        }
+
+    }
+    let nhieuDo = Number(prompt("Nhâp nhiệt độ "));
+    let temp = new Temperature(nhieuDo);
+    let C = temp.getDoC();
+    let F = temp.getchangeCtoF();
+    let K = temp.getchangeCtoKenvin();
+    document.write("Nhiệt độ "+C+ "*C bằng " +F+ "*F và " +K+ "*K");
+</script>
+</body>
+</html>
