@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LopMoTaHinhChuNhat</title>
+</head>
+<body>
+<!--<canvas id="canvasId" width=chieu_dai height=chieu_rong style="border:1px solid #c3c3c3;"></canvas>-->
+<script>
+    class Rectangle {
+        constructor (dai,rong){
+            this.chieuDai = dai;
+            this.chieuRong = rong;
+        }
+
+        setchieuDai(dai){
+            this.chieuDai = dai;
+        }
+        setchieuRong(rong){
+            this.chieuRong = rong;
+        }
+        getchieuDai(){
+            return this.chieuDai;
+        }
+        getchieuRong(){
+            return this.chieuRong;
+        }
+        getdienTich(){
+            return this.chieuDai * this.chieuRong;
+        }
+        getchuvi(){
+            return (this.chieuDai + this.chieuRong)/2;
+        }
+        getCanVas(){
+            let ctx = document.getElementById("canvasId");
+            ctx.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0,0,this.chieuDai,this.chieuRong);
+        }
+
+    }
+    let hinh_chu_nhat = new Rectangle();
+    let set_chieu_dai = hinh_chu_nhat.setchieuDai(25);
+    let set_chieu_rong = hinh_chu_nhat.setchieuRong(15);
+    let chieu_dai = hinh_chu_nhat.getchieuDai();
+    let chieu_rong = hinh_chu_nhat.getchieuRong();
+    let chu_vi = hinh_chu_nhat.getchuvi();
+    let dien_tich= hinh_chu_nhat.getdienTich();
+    document.write("Chiều dài = "+chieu_dai+"<br> Chiều rộng = "+chieu_rong+"<br>");
+    document.write("Diện tích hình chữ nhật là "+dien_tich+"<br> Chu vi hình chữ nhật là "+chu_vi+" <br>");
+
+    document.write("<br><canvas id=\"canvasId\" width= chieu_dai height=chieu_rong style=\"border:1px solid #c3c3c3;\"></canvas>");
+    let canvas = hinh_chu_nhat.getCanVas();
+    document.write(canvas);
+
+</script>
+</body>
+</html>
