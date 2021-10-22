@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<script>
+
+    function prefix_sums(arr) {
+        let new_arr = [];
+        for (let i = 0; i < arr.length; i++) {
+            new_arr[i] = 0;
+            for (let j = 0; j < i + 1; j++) {
+                new_arr[i] += arr[j];
+            }
+        }
+        return new_arr;
+    }
+
+    document.write(prefix_sums([1, 2, 3, 4, 5]));
+    document.write("<br>");
+    document.write(prefix_sums([1, 2, -3, 4, 5]));
+
+</script>
+</body>
+</html>

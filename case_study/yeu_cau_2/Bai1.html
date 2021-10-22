@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<script>
+    let nhapLuong = parseFloat(prompt("Nhập vào lương nhân viên"));
+    let tinhThueThuNhap;
+    let luong;
+    if(nhapLuong < 7){
+        tinhThueThuNhap = nhapLuong * 0.05;
+        luong = nhapLuong/ 26 * 24;
+        document.write("Tiền thuế phải đóng là" +tinhThueThuNhap+ "<br>");
+        document.write("Tiền lương tháng là " + luong);
+    }else if(7 <nhapLuong< 15){
+        tinhThueThuNhap = nhapLuong * 0.1;
+        luong = nhapLuong/ 26 * 24;
+        document.write("Tiền thuế phải đóng là" +tinhThueThuNhap+ "<br>");
+        document.write("Tiền lương tháng là " + luong);
+    }else if(nhapLuong == 15){
+        tinhThueThuNhap = nhapLuong * 0.2;
+        luong = nhapLuong/ 26 * 24;
+        document.write("Tiền thuế phải đóng là" +tinhThueThuNhap+ "<br>");
+        document.write("Tiền lương tháng là " + luong);
+    }
+</script>
+</body>
+</html>
