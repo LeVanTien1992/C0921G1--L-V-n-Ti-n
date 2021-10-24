@@ -5,6 +5,95 @@
     <title>Bai2</title>
 </head>
 <body>
+<script>
+    let m= parseInt(prompt("Nhap vao m"));
+    let n= parseInt(prompt("Nhap vao n"));
+    arr = [];
+    document.write("Mang 2 chieu gom " +m+ "*" +n+ "<br>");
+    for (let i= 0; i< m; i++){
+        arr[i]= [];
+        for (let j= 0; j< n; j++){
+            arr[i][j] = parseInt(prompt("Nhap mang ["+i+"]  ["+j+"]"));
+            document.write(arr[i][j]);
+        }
+        document.write("<br>");
+    }
 
+    function kiemTraSNT(so) {
+        if (so <= 1){
+            return false;
+        }else if (so == 2 || so == 3){
+            return true;
+        }else if (so % 2 == 0){
+            return false;
+        }else {
+            for (let i= 3; i< so; i+=2){
+                if(so % i == 0){
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    function hienThiSNT() {
+        for (let i= 0; i< arr.length; i++){
+            for (let j= 0; j< arr.length; j++){
+                if (kiemTraSNT(arr[i][j])){
+                    document.write("Các số nguyên tố gồm ["+arr[i][j]+"] <br>");
+                }
+            }
+        }
+    }
+    hienThiSNT();
+    function demSNT() {
+        let count= 0;
+        for (let i= 0; i< arr.length; i++){
+            for (let j= 0; j< arr.length; j++){
+                if (kiemTraSNT(arr[i][j])){
+                        count++;
+                }
+            }
+        }
+        document.write("Số lượng số nguyên tố là " + count+ "<br>");
+    }
+    demSNT();
+
+    function tongSNT() {
+        let sum = 0;
+        for (let i= 0; i< arr.length; i++){
+            for (let j= 0; j< arr.length; j++){
+                if (kiemTraSNT(arr[i][j])){
+                    sum += arr[i][j];
+                }
+            }
+        }
+        document.write("Tổng các số nguyên tố là " + sum);
+    }
+    tongSNT();
+
+
+    // function hienThiSNT() {
+    //     let arr = [];
+    //     let count = 0;
+    //     let n =2;
+    //     while (count< 20){
+    //         if (kiemTraSNT(n)){
+    //             arr.push(n);
+    //             count++;
+    //         }
+    //         n++;
+    //     }
+    //     document.write("20 so nguyen to =" +arr);
+    // }
+    // hienThiSNT();
+    // let nhapSo = parseInt(prompt("Nhap vao so"));
+    // let kiemTra = kiemTraSNT(nhapSo);
+    // if (kiemTra){
+    //     document.write(nhapSo+" la so nguyen to");
+    // }else {
+    //     document.write(nhapSo+" khong phai la so nguyen to");
+    // }
+</script>
 </body>
 </html>

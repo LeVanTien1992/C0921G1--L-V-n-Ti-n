@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập số muốn chuyển qua chuỗi");
+    let result = "";
+    for (let i= 0; i< number.length; i++){
+        switch (number[i]) {
+            case '0':
+                result += "không ";
+                break;
+            case '1':
+                result += "một ";
+                break;
+            case '2':
+                result += "hai ";
+                break;
+            case '3':
+                result += "ba ";
+                break;
+            case '4':
+                result += "bốn ";
+                break;
+            case '5':
+                result += "năm ";
+                break;
+            case '6':
+                result += "sáu ";
+                break;
+            case '7':
+                result += "bảy ";
+                break;
+            case '8':
+                result += "tám ";
+                break;
+            case '9':
+                result += "chín ";
+                break;
+            default :
+                result += "Bạn nhập số không có trong hệ thống";
+        }
+    }
+    alert(result);
+
+</script>
+</body>
+</html>

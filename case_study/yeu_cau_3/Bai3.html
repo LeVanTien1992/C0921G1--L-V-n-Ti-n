@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt("Nhap vap m"));
+    // let n = parseInt(prompt("Nhap vap n"));
+    let arr1 = [];
+    let arr2 = [];
+    for (let i= 0; i< m; i++){
+        arr1[i] = parseInt(prompt("Nhap " +i ));
+        arr2[i] = parseInt(prompt("Nhap " +i ));
+    }
+
+    let chia = arr1[0] / arr2[0];
+    let viTri = 0;
+
+    for (let i= 0; i< arr1.length; i++){
+        if (chia < arr1[i]/arr2[i]){
+            chia = arr1[i]/arr2[i];
+            viTri = i;
+            document.write("Phân số lớn nhất = " + arr1[i] + " / " + arr2[i]+ "<br>");
+        }
+    }
+    document.write("["+arr1+"]"+"<br>");
+    document.write("["+arr2+"]"+"<br>");
+
+    document.write("Vi tri lon nhat " +viTri);
+</script>
+</body>
+</html>
