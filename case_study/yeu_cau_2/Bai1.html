@@ -6,25 +6,19 @@
 </head>
 <body>
 <script>
+    // viết chương trình nhâp lương nhân viên, tính thuế thu nhập và tính lương thực nhận
     let nhapLuong = parseFloat(prompt("Nhập vào lương nhân viên"));
     let tinhThueThuNhap;
-    let luong;
+    let luongThucNhan;
     if(nhapLuong < 7){
         tinhThueThuNhap = nhapLuong * 0.05;
-        luong = nhapLuong/ 26 * 24;
-        document.write("Tiền thuế phải đóng là" +tinhThueThuNhap+ "<br>");
-        document.write("Tiền lương tháng là " + luong);
     }else if(7 <nhapLuong< 15){
         tinhThueThuNhap = nhapLuong * 0.1;
-        luong = nhapLuong/ 26 * 24;
-        document.write("Tiền thuế phải đóng là" +tinhThueThuNhap+ "<br>");
-        document.write("Tiền lương tháng là " + luong);
-    }else if(nhapLuong == 15){
+    }else if(nhapLuong == 15) {
         tinhThueThuNhap = nhapLuong * 0.2;
-        luong = nhapLuong/ 26 * 24;
-        document.write("Tiền thuế phải đóng là" +tinhThueThuNhap+ "<br>");
-        document.write("Tiền lương tháng là " + luong);
     }
+    luongThucNhan = nhapLuong - tinhThueThuNhap;
+    alert("Lương thực nhận = " + luongThucNhan);
 </script>
 </body>
 </html>

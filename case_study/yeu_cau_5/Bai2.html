@@ -6,6 +6,7 @@
 </head>
 <body>
 <script>
+    // Nhập mảng 2 chiều
     let m= parseInt(prompt("Nhap vao m"));
     let n= parseInt(prompt("Nhap vao n"));
     arr = [];
@@ -18,61 +19,40 @@
         }
         document.write("<br>");
     }
-
+// Hàm kiểm tra SNT
     function kiemTraSNT(so) {
-        if (so <= 1){
-            return false;
-        }else if (so == 2 || so == 3){
-            return true;
-        }else if (so % 2 == 0){
+        if (so < 2) {
             return false;
         }else {
-            for (let i= 3; i< so; i+=2){
-                if(so % i == 0){
+            for (let i= 2; i<= Math.sqrt(so); i++){
+                if (so % i == 0){
                     return false;
                 }
             }
             return true;
         }
     }
-
+// hiện thị SNT, tính tổng SNT, đếm SNT
     function hienThiSNT() {
-        for (let i= 0; i< arr.length; i++){
-            for (let j= 0; j< arr.length; j++){
-                if (kiemTraSNT(arr[i][j])){
-                    document.write("Các số nguyên tố gồm ["+arr[i][j]+"] <br>");
-                }
-            }
-        }
-    }
-    hienThiSNT();
-    function demSNT() {
-        let count= 0;
-        for (let i= 0; i< arr.length; i++){
-            for (let j= 0; j< arr.length; j++){
-                if (kiemTraSNT(arr[i][j])){
-                        count++;
-                }
-            }
-        }
-        document.write("Số lượng số nguyên tố là " + count+ "<br>");
-    }
-    demSNT();
-
-    function tongSNT() {
         let sum = 0;
+        let count = 0;
+        let mang_so = [];
         for (let i= 0; i< arr.length; i++){
-            for (let j= 0; j< arr.length; j++){
+            for (let j= 0; j< arr[i].length; j++){
                 if (kiemTraSNT(arr[i][j])){
                     sum += arr[i][j];
+                    count++;
+                    mang_so.push(arr[i][j]);
                 }
             }
         }
-        document.write("Tổng các số nguyên tố là " + sum);
+        document.write("Mảng số nguyên tố ["+mang_so+"] <br>");
+        document.write("Tổng các số nguyên tố " + sum+"<br>");
+        document.write("Số lượng các số nguyên tố " + count);
     }
-    tongSNT();
+    hienThiSNT();
 
-
+// hàm tính hiện thị 20 SNT
     // function hienThiSNT() {
     //     let arr = [];
     //     let count = 0;
@@ -87,6 +67,7 @@
     //     document.write("20 so nguyen to =" +arr);
     // }
     // hienThiSNT();
+    // Kiểm tra số có phải là SNT hay không
     // let nhapSo = parseInt(prompt("Nhap vao so"));
     // let kiemTra = kiemTraSNT(nhapSo);
     // if (kiemTra){

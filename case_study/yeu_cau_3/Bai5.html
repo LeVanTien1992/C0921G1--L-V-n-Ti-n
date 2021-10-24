@@ -6,35 +6,24 @@
 </head>
 <body>
 <script>
-    let so = Number(prompt("Mời bạn gọi nước"));
+    // tạo MENU các loại thức uống
+    let so; // khai báo biến số
+    let meNu = ["1.Cafe", "2.Cam Vắt", "3. Nước ép cà rốt", "4. Nước ép cà chùa", "5.Nước lọc", "6. Nước dừa"];// tạo mảng menu thức uống
+    let giaTien = [5000, 5000, 3000, 4000, 1000, 5000];// tạo mảng menu giá tiên
+    let soLuong ;// khai báo biến số lượng
+    let tong = 0; // khai báo biến tổng
+    let tongBill = 0;// khai báo tổng bill
     do {
-        switch (so) {
-            case 1:
-                alert("Bạn đã chọn Cafe");
-                break;
-            case 2:
-                alert("Bạn đã chọn Cam vắt ");
-                break;
-            case 3:
-                alert("Bạn đã chọn nước ép cà rốt");
-                break;
-            case 4:
-                alert("Bạn đã chọn nước ép cà chua");
-                break;
-            case 5:
-                alert("Bạn đã chọn nước lọc");
-                break;
-            case 6:
-                alert("Bạn đã chọn nước dừa");
-                break;
-            case 7:
-                alert("Cảm ơn bạn đã đặt món. Xin chào và hẹn găp lại");
-                break;
-            default :
-                alert("Vui lòng nhập số từ 1 đến 7");
-        }
-
+         so = Number(prompt("Mời bạn gọi nước"));// nhập số menu
+         if (so >= 1 && so <= 6){ // điều kiện số >= 1 và số <= 6 như số lượng
+             alert(meNu[so -1]+ " có giá là" +giaTien[so -1]);
+             soLuong = prompt("Bạn muốn order bao nhiêu");
+             tong = soLuong * giaTien[so -1]; // tính tổng giá tiền
+             alert("Tổng số lượng " +tong);
+             tongBill += tong; // tính tổng bill
+         }
     }while (so !== 7);
+    alert("Tổng số tiền phải trả " +tongBill); //xuất bill
 </script>
 </body>
 </html>

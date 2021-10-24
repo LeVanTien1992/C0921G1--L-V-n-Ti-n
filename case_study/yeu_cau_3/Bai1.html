@@ -6,21 +6,118 @@
 </head>
 <body>
 <script>
+// Nhập mảng
+     function prefix_sums() {
+         let size = prompt("Nhập độ dài của mảng");
+         let arrA = [];
+         for (let i= 0; i< size; i++){
+             let nhap = parseInt(prompt("Nhập phần tử thứ " +i));
+             arrA.push(nhap);
+         }
+         document.write("Mảng A gồm ["+arrA+"] <br>");
+         // tính tổng mảng A sau đó push vào mảng B để tạo ra mảng B
+         let sum = 0;
+         let arrB = [];
+         for (let i = 0; i < arrA.length; i++) {
+             sum += arrA[i];
+             arrB.push(sum);
+         }
+         document.write("Tổng mảng A = ["+sum+"] <br>");
+         document.write("Tổng mảng B đươc tạo ra = ["+arrB+"]");
+     }
+     prefix_sums();
 
-    function prefix_sums(arr) {
-        let new_arr = [];
-        for (let i = 0; i < arr.length; i++) {
-            new_arr[i] = 0;
-            for (let j = 0; j < i + 1; j++) {
-                new_arr[i] += arr[j];
-            }
-        }
-        return new_arr;
-    }
 
-    document.write(prefix_sums([1, 2, 3, 4, 5]));
-    document.write("<br>");
-    document.write(prefix_sums([1, 2, -3, 4, 5]));
+
+
+
+
+
+
+
+
+
+
+
+
+//// Nhập 1 mảng riêng biệt
+//    let size = prompt("Nhập độ dài của mảng");
+//    let arr1 = [];
+//    for (let i= 0; i< size; i++){
+//        let nhap = parseInt(prompt("Nhập vào phần tử thứ " +i));
+//        arr1.push(nhap);
+//    }
+//    document.write("Mảng gồm ["+arr1+"]");
+//// Nhập 2 mảng riêng biệt
+//    let size = prompt("Nhập độ dài của mảng");
+//    let arr1 = [];
+//    let arr2 = [];
+//    for (let i= 0; i< size; i++){
+//        let nhap1 = parseInt(prompt("Nhập vào phần tử thứ" +i));
+//        arr1.push(nhap1);
+//        let nhap2 = parseInt(prompt("Nhập vào phần tử thứ" +i));
+//        arr2.push(nhap2);
+//    }
+//    document.write("Mảng 1 gồm ["+arr1+"] <br>");
+//    document.write("Mảng 2 gồm ["+arr2+"]<br>");
+//// tính phân số lớn nhất
+//    let chia = arr1[0]/ arr2[0];
+//    let viTri = 0;
+//    for (let i= 0; i< arr1.length; i++){
+//        if (arr1[i]/arr2[i] > chia){
+//            chia = arr1[i]/arr2[i];
+//            viTri =i;
+//            document.write("Phân số lớn nhất là "  +arr1[i]+ "/" +arr2[i]+"<br>");
+//        }
+//    }
+//    document.write("Vị trí lớn nhất là " + viTri);
+////Nhập mảng 2 chiều
+//    let m = parseInt(prompt("Nhập độ dài m"));
+//    let n = parseInt(prompt("Nhập độ dài n"));
+//    document.write("Mảng 2 chiều " +m+ "*" +n+ "<br>");
+//    let arr = [];
+//    for (let i= 0; i< m; i++){
+//        arr[i] = [];
+//        for (let j= 0; j< n; j++){
+//            arr[i][j] = parseInt(prompt("Nhập mảng ["+i+"] ["+j+"]"));
+//            document.write(arr[i][j]);
+//        }
+//        document.write("<br>");
+//    }
+//    // hàm kiểm tra số nguyên tố
+//    function kiemTraSNT(so) {
+//        if(so < 2){
+//            return false;
+//        }else {
+//            for (let i= 2; i<= Math.sqrt(so); i++){
+//                if (so % i === 0){
+//                    return false;
+//                }
+//            }
+//            return true;
+//        }
+//
+//    }
+//// hiện thí SNT, tính tổng SNT, đếm SNT,
+//    let count = 0;
+//    let mang_so = [];
+//    let tong = 0;
+//    for (let i= 0; i< arr.length; i++){
+//        for (let j= 0; j< arr[i].length; j++){
+//            if (kiemTraSNT(arr[i][j])){
+//                tong += arr[i][j];
+//                mang_so.push(arr[i][j]);
+//                count++;
+//            }
+//        }
+//        // document.write("<br>");
+//    }
+//    document.write("Mảng số nguyên tố là ["+mang_so+"] <br>");
+//    document.write("Số lượng số nguyên tố là " +count+"<br>");
+//    document.write("Tổng các số nguyên tố là " +tong+"<br>");
+
+
+
 
 </script>
 </body>
