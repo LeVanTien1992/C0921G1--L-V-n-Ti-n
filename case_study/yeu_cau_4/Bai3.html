@@ -10,20 +10,16 @@
     let arr2 = prompt("Nhap chuoi arr2");
     let arr3 = [];
     for (let i= 0; i< arr1.length; i++){
-        let flag = true;
         for (let j= 0; j< arr2.length; j++){
-            if (arr1[i] == arr2[j]){
-               flag = false;
-               break;
+            if (arr1[i] == arr2[j]) {
+                arr3.push(arr2[j]);
+                arr1= arr1.replace(arr1[i],'')
+                arr2= arr2.replace(arr2[i],'')
             }
         }
-        if (flag){
-            arr3.push(arr1[i],arr2[j]);
-        }
     }
-
-    document.write("Chuỗi gồm ["+arr3+"] <br>");
-    document.write("Số ký tự khác nhau là ["+arr3.length+"] <br>");
+    document.write("Chuỗi giống của 2 mảng gồm ["+arr3+"] <br>");
+    document.write("Số lượng ký tự  là ["+arr3.length+"] <br>");
 
 </script>
 </body>

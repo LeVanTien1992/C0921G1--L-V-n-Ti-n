@@ -7,18 +7,24 @@
 <body>
 <script>
     let str = prompt("Nhap vao chuoi can doi");
-    str = str.trim();
-    let sentence = str.toLowerCase().split(" ");
+    str = str.trim();// xóa khoảng trắng đầu cuối của chuỗi
+    // chuyển các phần tử của chuỗi str thì viết thường
+    let sentence = str.toLowerCase().split(" ");// split chuyển chuỗi thành mảng,
+    alert(sentence)
     for(let i = 0; i< sentence.length; i++){
         if (sentence[i]==""){
-            sentence.splice(i,1);
+            sentence.splice(i,1);// xóa phần tử tại vị trí i, số phần tử bị xóa
             i--;
         }
+        alert(sentence)
     }
     for(let i = 0; i< sentence.length; i++){
+        // viết HOA phần tử đầu tiên trong chuỗi sentence[i], kết quả lưu vào 1 biến a
+        // slice là Cắt từ vị trí thứ 1 trở đi kết qua lưu vào 1 biến b
+        // sau đó cộng 2 biến a + b thành 1 chuỗi ghi đè lên sentence[i]
         sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
     }
-    document.write(sentence.join(' '));
+    document.write(sentence.join(' '));// chuyển mảng về chuỗi
 
 
 

@@ -27,15 +27,27 @@
 
     // document.write("So ky tu khac nhau la " +count);
 
-    let str = prompt("Nhap chuoi");
-    let result = "";
-    for (let i= 0; i< str.length; i++){
-       if (str.indexOf(str[i])== i){
-           result += str[i];
-       }
+    let s = prompt("Nhập vào chuỗi");
+    let array = [];
+    for(let i= 0;i< s.length; i++){
+        if(array.indexOf(s[i]) === -1 ){
+            array.push(s[i]);
+            document.write(array[i]);
+        }
     }
-    document.write("Chuỗi gồm ("+str+")<br>");
-    document.write("so ky tu khac nhau " + result.length);
+    alert(array.length);
+
+
+
+    // let str = prompt("Nhap chuoi");
+    // let result = "";
+    // for (let i= 0; i< str.length; i++){
+    //    if (str.indexOf(str[i]) === i){
+    //        result += str[i];
+    //    }
+    // }
+    // document.write("Chuỗi gồm ("+str+")<br>");
+    // document.write("so ky tu khac nhau " + result.length);
 </script>
 </body>
 </html>

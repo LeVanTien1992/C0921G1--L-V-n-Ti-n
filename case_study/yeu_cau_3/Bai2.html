@@ -6,33 +6,29 @@
 </head>
 <body>
 <script>
-    let size1 = parseInt(prompt("Nhập độ dài của mảng"));
-    let size2 = parseInt(prompt("Nhập độ dài của mảng"));
+    let size1 = parseInt(prompt("Nhập độ dài của mảng arr1"));
+    let size2 = parseInt(prompt("Nhập độ dài của mảng arr2"));
     let arr1 = [];
     let arr2 = [];
     for (let i= 0; i< size1; i++){
-        nhap1 = parseInt(prompt("Nhập phần tử thứ " +i));
+        nhap1 = parseInt(prompt("Nhập phần tử của mảng 1 vị trí thứ " +i));
         arr1.push(nhap1);
     }
     document.write("Mảng A gồm ["+arr1+"] <br>");
     for (let i= 0; i< size2; i++){
-        nhap1 = parseInt(prompt("Nhập phần tử thứ " +i));
-        arr2.push(nhap1);
+        nhap2 = parseInt(prompt("Nhập phần tử của mảng 2 vị trí tử thứ " +i));
+        arr2.push(nhap2);
     }
     document.write("Mảng B gồm ["+arr2+"]<br>");
     let index ;
     let arr3 = [];
 
     for (let i= 0; i< arr2.length; i++){
+        //Điều kiện 1: Tìm phần tử thứ i của mảng arr2 khác mảng arr1 thì in ra
+        //Điều kiện 2: Tìm phần tử thứ i của mảng arr3 không trùng với mảng arr2
         if(arr1.indexOf(arr2[i]) === -1 && arr3.indexOf(arr2[i]) === -1){
             arr3.push(arr2[i]);
-
         }
-        // if (arr2[i] !== arr1[i]){
-        //     index = arr2.indexOf(arr2[i]);
-        //     arr3.push(index);
-        // }
-        // arr3.indexOf(index);
     }
     document.write("Phần tử khác cần tìm thấy là ["+arr3+"]");
 
